@@ -30,16 +30,16 @@
                            <div class="collapse navbar-collapse" id="navbarNav">
                               <ul class="navbar-nav ms-auto">
                                  <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="https://www.facebook.com/"><img src="img/SOCIAL LOGO WILL BE USE/Facebook Logo-png.png" alt=""></a>
+                                    <a class="nav-link active" aria-current="page" href="https://www.facebook.com/"><img src="{{ asset('img/SOCIAL LOGO WILL BE USE/Facebook Logo-png.png') }}" alt=""></a>
                                  </li>
                                  <li class="nav-item">
-                                    <a class="nav-link" href="https://www.linkedin.com/login"><img src="img/SOCIAL LOGO WILL BE USE/linkedin-logo-png.png" alt=""></a>
+                                    <a class="nav-link" href="https://www.linkedin.com/login"><img src="{{ asset('img/SOCIAL LOGO WILL BE USE/linkedin-logo-png.png') }}" alt=""></a>
                                  </li>
                                  <li class="nav-item">
-                                    <a class="nav-link" href="https://twitter.com/"><img src="img/SOCIAL LOGO WILL BE USE/Twitter-logo-png.png" alt=""></a>
+                                    <a class="nav-link" href="https://twitter.com/"><img src="{{ asset('img/SOCIAL LOGO WILL BE USE/Twitter-logo-png.png') }}" alt=""></a>
                                  </li>
                                  <li class="nav-item">
-                                    <a class="nav-link" href="https://www.youtube.com/"><img src="img/SOCIAL LOGO WILL BE USE/Youtube logo-png.png" alt=""></a>
+                                    <a class="nav-link" href="https://www.youtube.com/"><img src="{{ asset('img/SOCIAL LOGO WILL BE USE/Youtube logo-png.png') }}" alt=""></a>
                                  </li>
                               </ul>
                            </div>
