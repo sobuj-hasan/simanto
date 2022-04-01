@@ -78,9 +78,10 @@
                                     PRODUCTS
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                       <li><a class="dropdown-item" href="Products.html">Knit</a></li>
-                                       <li><a class="dropdown-item" href="Products.html">Oven</a></li>
-                                       <li><a class="dropdown-item" href="Products.html">Sweater</a></li>
+                                        <li><a class="dropdown-item" href="{{ route('products', 1) }}">Kids</a></li>
+                                        <li><a class="dropdown-item" href="{{ route('products', 3) }}">Oven</a></li>
+                                        <li><a class="dropdown-item" href="{{ route('products', 2) }}">Knit</a></li>
+                                       <li><a class="dropdown-item" href="{{ route('products', 4) }}">Sweater</a></li>
                                     </ul>
                                  </li>
                                  <li class="nav-item">
@@ -135,7 +136,7 @@
                 <div class="sec-5-dgn">
                 <h2>USEFUL LINKS</h2>
                 <h3><a href="{{ route('aboutus') }}">ABOUT</a></h3>
-                <h3><a href="{{ route('products') }}">OUR-PRODUCT</a></h3>
+                <h3><a href="{{ route('products', 1) }}">OUR-PRODUCT</a></h3>
                 <h3><a href="{{ route('contactus') }}">CONTACT</a></h3>
                 </div>
             </div>

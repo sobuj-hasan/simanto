@@ -5,19 +5,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <label for="">Your Name</label>
-                    <input type="text" placeholder="Enter Your Full Name">
-                    <br>
-                    <label for="">Email Address</label>
-                    <input type="text" placeholder="Enter Your Email Address">
-                    <br>
-                    <label for="">Phone Number</label>
-                    <input type="text" placeholder="Enter Your Phone Number">
-                    <br>
-                    <label for="">Phone Number</label>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
-                    <br>
-                    <Button>SEND</Button>
+                    <form method="POST" action="{{ route('contact.message') }}">
+                        @csrf
+                        <label for="">Your Name</label>
+                        <input type="text" placeholder="Enter Your Full Name" name="name">
+                        <br>
+                        <label for="">Email Address</label>
+                        <input type="text" placeholder="Enter Your Email Address" name="email">
+                        <br>
+                        <label for="">Phone Number</label>
+                        <input type="text" placeholder="Enter Your Phone Number" name="phone">
+                        <br>
+                        <label for="">Message</label>
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+                        <br>
+                        <Button type="submit">SEND</Button>
+                    </form>
                 </div>
             </div>
         </div>

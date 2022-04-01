@@ -80,25 +80,25 @@
             <h2>Our Production</h2>
             <div class="col-lg-6">
                <div class="productbox ">
-                  <a href="Products.html"><img src="img/banner/p1.png" alt=""> 
+                  <a href="{{ route('products', 1) }}"><img src="{{ asset('img/banner/p1.png') }}" alt=""> 
                   </a>
                </div>
             </div>
             <div class="col-lg-6">
                <div class="productbox ">
-                  <a href="Products.html">  <img src="img/banner/p2.png" alt=""> 
+                  <a href="{{ route('products', 4) }}">  <img src="{{ asset('img/banner/p2.png') }}" alt=""> 
                   </a>
                </div>
             </div>
             <div class="col-lg-6">
                <div class="productbox ">
-                  <a href="Products.html"> <img src="img/banner/p3.png" alt=""> 
+                  <a href="{{ route('products', 2) }}"> <img src="{{ asset('img/banner/p3.png') }}" alt=""> 
                   </a>
                </div>
             </div>
             <div class="col-lg-6">
                <div class="productbox ">
-                  <a href="Products.html"> <img src="img/banner/p4.png" alt=""> 
+                  <a href="{{ route('products', 3) }}"> <img src="{{ asset('img/banner/p4.png') }}" alt="">
                   </a>
                </div>
             </div>

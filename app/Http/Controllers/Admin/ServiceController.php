@@ -7,6 +7,7 @@ use App\Models\Service;
 use Illuminate\Http\Request;
 use Idemonbd\Notify\Facades\Notify;
 use App\Http\Controllers\Controller;
+use App\Models\Category;
 use Illuminate\Support\Facades\Auth;
 use Intervention\Image\Facades\Image;
 
@@ -30,7 +31,8 @@ class ServiceController extends Controller
      */
     public function create()
     {
-        return view('admin.services.create');
+        $data['categories'] = Category::all();
+        return view('admin.services.create', $data);
     }
 
     /**
@@ -43,9 +45,9 @@ class ServiceController extends Controller
     {
         $request->validate([
             'medicine_name' => 'required',
-            'price' => 'required|integer',
-            'return_policy' => 'required|integer',
-            'description' => "required",
+            'price' => '',
+            'return_policy' => '',
+            'description' => "",
             'image' => 'required|image',
         ]);
 
@@ -101,10 +103,11 @@ class ServiceController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
+            'category_id' => 'required',
             'medicine_name' => 'required',
-            'price' => 'required|integer',
-            'return_policy' => 'required|integer',
-            'description' => "required",
+            'price' => '',
+            'return_policy' => '',
+            'description' => "",
             'image' => '',
         ]);
 

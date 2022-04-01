@@ -18,11 +18,11 @@ use Illuminate\Support\Facades\Auth;
 class FrontendController extends Controller
 {
     public function index(){
-        return view('index');
+        $data['categories'] = Category::all();
+        return view('index', $data);
     }
 
     public function our_comanpy(){
-        // $data['new_arrivals'] = NewArrival::where('status', 1)->inRandomOrder()->limit(80)->get();
         return view('our_company');
     }
 
@@ -36,15 +36,29 @@ class FrontendController extends Controller
         return view('compliance');
     }
 
-    public function products(Request $request)
+    public function products($id)
     {
-        // $data['singleproduct'] = Service::where('id', $id)->firstOrFail();
-        return view('products');
+        $data['products'] = Service::where('category_id', $id)->get();
+        return view('products', $data);
     }
 
     public function contactus()
     {
         return view('contactus');
+    }
+
+    public function contactmessage(Request $request)
+    {
+        $request->validate([
+            'name' => 'required|min:2',
+            'email' => 'required|min:2',
+            'phone' => 'required|email',
+            'message' => 'required',
+        ]);
+
+        ContactFormSubmit::create($request->all());
+        Notify::success('Message Successfully Submited', 'Success');
+        return back();
     }
 
 

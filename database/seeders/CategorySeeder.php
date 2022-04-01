@@ -15,34 +15,16 @@ class CategorySeeder extends Seeder
     public function run()
     {
         Category::create([
-            'name' => 'Appartment',
+            'name' => 'Kids',
         ]);
         Category::create([
-            'name' => 'Room',
+            'name' => 'Knit',
         ]);
         Category::create([
-            'name' => 'Sublet',
+            'name' => 'Oven',
         ]);
         Category::create([
-            'name' => 'PentHouse',
-        ]);
-        Category::create([
-            'name' => 'Duplex',
-        ]);
-        Category::create([
-            'name' => 'Building',
-        ]);
-        Category::create([
-            'name' => 'Office',
-        ]);
-        Category::create([
-            'name' => 'Shop',
-        ]);
-        Category::create([
-            'name' => 'WareHouse',
-        ]);
-        Category::create([
-            'name' => 'Industrial',
+            'name' => 'Sweater',
         ]);
     }
 }

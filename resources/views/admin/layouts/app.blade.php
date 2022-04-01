@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title> @yield('title') - SexMedicine</title>
+        <title> @yield('title') - Business Website</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <meta content="" />
         <meta content="Coderthemes" name="author" />
@@ -23,11 +23,8 @@
         <!-- Bootstrap toastr CSS -->
         <link rel="stylesheet" href="https://cdn.bootcss.com/toastr.js/latest/css/toastr.min.css" />
         <link href="{{ asset('Backend') }}/assets/css/icons.css" rel="stylesheet" type="text/css" />
-
         <link href="{{ asset('Backend') }}/assets/css/metismenu.min.css" rel="stylesheet" type="text/css" />
-
         <link href="{{ asset('Backend') }}/assets/css/style.css" rel="stylesheet" type="text/css" />
-
         <script src="{{ asset('Backend') }}/assets/js/modernizr.min.js"></script>
 
     </head>
@@ -45,7 +42,7 @@
                 <div class="topbar-left">
                     <a href="{{ route('admin.index') }}" class="logo">
                         <span>
-                            <h4 class="text-white pt-2"><strong>SexMedicine Admin</strong></h4>
+                            <h4 class="text-white pt-2"><strong>Business Website Admin</strong></h4>
                         </span>
                         <i>
                             <img src="{{ asset('Backend') }}/assets/images/logo_sm.png" alt="" height="28">
@@ -122,14 +119,14 @@
                                 </a>
                             </li>
                             {{-- <li>
-                                <a href="javascript: void(0);"><i class="fas fa-sitemap"></i> <span>Property Category </span> <span class="menu-arrow"></span></a>
+                                <a href="javascript: void(0);"><i class="fas fa-sitemap"></i> <span>Product Category</span> <span class="menu-arrow"></span></a>
                                 <ul class="nav-second-level" aria-expanded="false">
                                     <li><a href="{{ route('categories.create') }}">Add New</a></li>
                                     <li><a href="{{ route('categories.index') }}">View All</a></li>
                                 </ul>
-                            </li>
+                            </li> --}}
 
-                            <li>
+                            {{-- <li>
                                 <a href="javascript: void(0);"><i class="fa-solid fa-house-chimney"></i> <span>Our Properties</span> <span class="menu-arrow"></span></a>
                                 <ul class="nav-second-level" aria-expanded="false">
                                     <li><a href="{{ route('properties.index') }}">View All</a></li>
@@ -137,19 +134,19 @@
                                 </ul>
                             </li> --}}
                             <li>
-                                <a href="javascript: void(0);"> <i class="fas fa-users-cog"></i> <span>Our Medicine</span> <span class="menu-arrow"></span></a>
+                                <a href="javascript: void(0);"> <i class="fa-brands fa-product-hunt"></i> <span>Our Product</span> <span class="menu-arrow"></span></a>
                                 <ul class="nav-second-level" aria-expanded="false">
-                                    <li><a href="{{ route('service.index') }}">View All Medicine</a></li>
-                                    <li><a href="{{ route('service.create') }}">Add New Medicine</a></li>
+                                    <li><a href="{{ route('service.index') }}">View All Products</a></li>
+                                    <li><a href="{{ route('service.create') }}">Add New Products</a></li>
                                 </ul>
                             </li>
-                            <li>
+                            {{-- <li>
                                 <a href="javascript: void(0);"> <i class="fa-solid fa-house-medical"></i> <span>New Arrivals</span> <span class="menu-arrow"></span></a>
                                 <ul class="nav-second-level" aria-expanded="false">
                                     <li><a href="{{ route('newarrivals.index') }}">New Arrivals Medicine</a></li>
                                     <li><a href="{{ route('newarrivals.create') }}">Add New Arrivals</a></li>
                                 </ul>
-                            </li>
+                            </li> --}}
                             <li>
                                 <a href="javascript: void(0);"><i class="fi-head"></i> <span> Manage Users</span> <span class="menu-arrow"></span></a>
                                 <ul class="nav-second-level" aria-expanded="false">
@@ -161,13 +158,13 @@
                                 <ul class="nav-second-level" aria-expanded="false">
                                     <li><a href="{{ route('request.index') }}">Rental Consultancy</a></li>
                                 </ul>
-                            </li>
+                            </li> --}}
                             <li>
                                 <a href="javascript: void(0);"><i class="far fa-question-circle"></i> <span> Visitor queries </span> <span class="menu-arrow"></span></a>
                                 <ul class="nav-second-level" aria-expanded="false">
                                     <li><a href="{{ route('querstion.index') }}">View All</a></li>
                                 </ul>
-                            </li> --}}
+                            </li>
                             <li>
                                 <a href="javascript: void(0);"><i class="fas fa-chevron-circle-left"></i> <span> Back Website</span> <span class="menu-arrow"></span></a>
                                 <ul class="nav-second-level" aria-expanded="false">
@@ -209,7 +206,7 @@
                 </div> <!-- content -->
 
                 <footer class="footer text-right">
-                    @php echo date('Y'); @endphp © Tolet-Book
+                    @php echo date('Y'); @endphp © Business Website 
                 </footer>
 
             </div>

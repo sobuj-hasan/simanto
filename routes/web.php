@@ -15,7 +15,8 @@ Route::get('/dashboard', function () {
     Route::get('our/company', [FrontendController::class, 'our_comanpy'])->name('our.comanpy');
     Route::get('our/compliance', [FrontendController::class, 'compliance'])->name('compliance');
     Route::get('contactus', [FrontendController::class, 'contactus'])->name('contactus');
-    Route::get('products', [FrontendController::class, 'products'])->name('products');
+    Route::get('products/{id}', [FrontendController::class, 'products'])->name('products');
+    Route::post('contact/message', [FrontendController::class, 'contactmessage'])->name('contact.message');
 
 
 
@@ -63,10 +64,10 @@ Route::get('/dashboard', function () {
             'users' => 'UserController',
             'service' => 'ServiceController',
             'newarrivals' => 'NewArrivalsController',
+            'admin/visitor/querstion' => 'VisitorQueryController',
             // 'blogcategories' => 'BlogCategoryController',
             // 'blogs' => 'BlogController',
             // 'admin/subscriber' => 'SubscribeController',
-            // 'admin/visitor/querstion' => 'VisitorQueryController',
             // 'properties' => 'PropertyController',
             // 'consultant/request' => 'RentConsultantController',
         ]);
