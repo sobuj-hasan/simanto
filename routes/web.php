@@ -15,7 +15,7 @@ Route::get('/dashboard', function () {
     Route::get('our/company', [FrontendController::class, 'our_comanpy'])->name('our.comanpy');
     Route::get('our/compliance', [FrontendController::class, 'compliance'])->name('compliance');
     Route::get('contactus', [FrontendController::class, 'contactus'])->name('contactus');
-    Route::get('our/company', [FrontendController::class, 'our_company'])->name('our.company');
+    Route::get('products', [FrontendController::class, 'products'])->name('products');
 
 
 

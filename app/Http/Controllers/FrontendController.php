@@ -36,10 +36,10 @@ class FrontendController extends Controller
         return view('compliance');
     }
 
-    public function our_company(Request $request)
+    public function products(Request $request)
     {
         // $data['singleproduct'] = Service::where('id', $id)->firstOrFail();
-        return view('our_company');
+        return view('products');
     }
 
     public function contactus()

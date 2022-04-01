@@ -62,32 +62,32 @@
          <div class="sec-6-dgn">
          
            <div class="dgn-1">
-             <img src="img/COMPLIANCE LOGO/Edit/1.jpg" alt="" width="100%"  >
+             <img src="{{ asset('img/COMPLIANCE LOGO/Edit/1.jpg') }}" alt="" width="100%"  >
            
            </div>
      
      
            <div class="dgn-1">
-             <img src="img/COMPLIANCE LOGO/Edit/2.png" alt="" width="100%"  >
+             <img src="{{ asset('img/COMPLIANCE LOGO/Edit/2.png') }}" alt="" width="100%"  >
            
            </div> <div class="dgn-1">
-             <img src="img/COMPLIANCE LOGO/Edit/3.png" alt="" width="100%"  >
+             <img src="{{ asset('img/COMPLIANCE LOGO/Edit/3.png') }}" alt="" width="100%"  >
            
            </div> <div class="dgn-1">
-             <img src="img/COMPLIANCE LOGO/Edit/4.png" alt="" width="100%"  >
+             <img src="{{ asset('img/COMPLIANCE LOGO/Edit/4.png') }}" alt="" width="100%"  >
            
            </div> <div class="dgn-1">
-             <img src="img/COMPLIANCE LOGO/Edit/5.png" alt="" width="100%"  >
+             <img src="{{ asset('img/COMPLIANCE LOGO/Edit/5.png') }}" alt="" width="100%"  >
            
            </div>
            
            <div class="dgn-1">
-             <img src="img/COMPLIANCE LOGO/Edit/6.png" alt="" width="100%"  >
+             <img src="{{ asset('img/COMPLIANCE LOGO/Edit/6.png') }}" alt="" width="100%"  >
            
            </div>
            
            <div class="dgn-1">
-             <img src="img/COMPLIANCE LOGO/Edit/7.jpg" alt="" width="100%"  >
+             <img src="{{ asset('img/COMPLIANCE LOGO/Edit/7.jpg') }}" alt="" width="100%"  >
            
            </div>
            

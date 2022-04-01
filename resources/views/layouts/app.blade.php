@@ -71,7 +71,7 @@
                                     <a class="nav-link" href="{{ route('aboutus') }}">ABOUT US</a>
                                  </li>
                                  <li class="nav-item">
-                                    <a class="nav-link" href="ourcompanies.html">Our Companies</a>
+                                    <a class="nav-link" href="{{ route('our.comanpy') }}">Our Companies</a>
                                  </li>
                                  <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="Products.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -84,10 +84,10 @@
                                     </ul>
                                  </li>
                                  <li class="nav-item">
-                                    <a class="nav-link" href="compliance.html">COMPLIANCE</a>
+                                    <a class="nav-link" href="{{ route('compliance') }}">COMPLIANCE</a>
                                  </li>
                                  <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">CONTACT US</a>
+                                    <a class="nav-link" href="{{ route('contactus') }}">CONTACT US</a>
                                  </li>
                                  @if (Auth::guest())
                                     <li class="nav-item">
@@ -134,9 +134,9 @@
             <div class="col-lg-6">
                 <div class="sec-5-dgn">
                 <h2>USEFUL LINKS</h2>
-                <h3><a href="about.html">ABOUT</a></h3>
-                <h3><a href="Products.html">OUR-PRODUCT</a></h3>
-                <h3><a href="contact.html">CONTACT</a></h3>
+                <h3><a href="{{ route('aboutus') }}">ABOUT</a></h3>
+                <h3><a href="{{ route('products') }}">OUR-PRODUCT</a></h3>
+                <h3><a href="{{ route('contactus') }}">CONTACT</a></h3>
                 </div>
             </div>
         </div>
