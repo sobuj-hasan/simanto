@@ -4,9 +4,11 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title> @yield('title') | Business-Website</title>
+      <title> @yield('title') | Simanta International</title>
       <!-- css -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+      {{-- Notify css --}}
+      <link rel="stylesheet" href="https://cdn.bootcss.com/toastr.js/latest/css/toastr.min.css" />
       <link rel="stylesheet" href="{{ asset('css/all.min.css') }}">
       <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
       <link rel="stylesheet" href="{{ asset('css/font.css') }}">
@@ -23,23 +25,31 @@
                   <div class="section-one-design">
                      <nav class="navbar navbar-expand-lg navbar-light ">
                         <div class="container-fluid">
-                           <a class="navbar-brand" href="#"><img src="{{ asset('img/logo/logo.jpeg') }}" alt=""></a>
+                           <a class="navbar-brand" href="{{ route('index') }}"><img src="{{ asset('img/logo/logo.jpeg') }}" alt=""></a>
                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                            <span class="navbar-toggler-icon"></span>
                            </button>
                            <div class="collapse navbar-collapse" id="navbarNav">
                               <ul class="navbar-nav ms-auto">
                                  <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="https://www.facebook.com/"><img src="{{ asset('img/SOCIAL LOGO WILL BE USE/Facebook Logo-png.png') }}" alt=""></a>
+                                    <a class="nav-link active" aria-current="page" href="https://www.facebook.com/">
+                                       <i class="fa-brands fa-facebook text-info fs-3"></i>
+                                    </a>
                                  </li>
                                  <li class="nav-item">
-                                    <a class="nav-link" href="https://www.linkedin.com/login"><img src="{{ asset('img/SOCIAL LOGO WILL BE USE/linkedin-logo-png.png') }}" alt=""></a>
+                                    <a class="nav-link" href="https://www.linkedin.com/login">
+                                       <i class="fa-brands fa-linkedin text-secondary fs-3"></i>
+                                    </a>
                                  </li>
                                  <li class="nav-item">
-                                    <a class="nav-link" href="https://twitter.com/"><img src="{{ asset('img/SOCIAL LOGO WILL BE USE/Twitter-logo-png.png') }}" alt=""></a>
+                                    <a class="nav-link" href="https://twitter.com/">
+                                       <i class="fa-brands fa-twitter-square text-primary fs-3"></i>
+                                    </a>
                                  </li>
                                  <li class="nav-item">
-                                    <a class="nav-link" href="https://www.youtube.com/"><img src="{{ asset('img/SOCIAL LOGO WILL BE USE/Youtube logo-png.png') }}" alt=""></a>
+                                    <a class="nav-link" href="https://www.youtube.com/">
+                                       <i class="fa-brands fa-youtube text-danger fs-3"></i>
+                                    </a>
                                  </li>
                               </ul>
                            </div>
@@ -75,7 +85,7 @@
                                  </li>
                                  <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="Products.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    PRODUCTS
+                                    OUR PRODUCT
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                         <li><a class="dropdown-item" href="{{ route('products', 1) }}">Kids</a></li>
@@ -86,6 +96,9 @@
                                  </li>
                                  <li class="nav-item">
                                     <a class="nav-link" href="{{ route('compliance') }}">COMPLIANCE</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('services') }}">OUR SERVICES</a>
                                  </li>
                                  <li class="nav-item">
                                     <a class="nav-link" href="{{ route('contactus') }}">CONTACT US</a>
@@ -127,7 +140,6 @@
             <div class="col-lg-6">
                 <div class="sec-5-dgn">
                 <img src="{{ asset('img/logo/logo.jpeg') }}" alt="">
-                <h1>Mejor General Md Sharif Uddin (Retd)</h1>
                 <h3><span>ADDRESS:</span> APT: #2A HOUSE #109 MOSQUE ROAD BANANI OLD DOHS DHAKA 1206 BANGLADESH</h3>
                 <h3><span>PHONE:</span> 01711568025</h3>
                 </div>
@@ -146,9 +158,13 @@
     <!-- sec-5 end -->
     <!-- js -->
     <script src="{{ asset('js/jquery-3.6.0.slim.min.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
+    <script src="https://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
     <script src="{{ asset('js/slick.min.js') }}"></script>
     <script src="{{ asset('js/main.js') }}"></script>
+
+    {!! Notify::message() !!}
 </body>
 </html>
 

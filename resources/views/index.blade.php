@@ -49,9 +49,7 @@
    <div class="buisinesstalk">
       <div class="container">
          <div class="row">
-            <h1>Welcome to 
-               simantaintl.com
-            </h1>
+            <h1>Welcome to Simanta International</h1>
             <h2>100% Export Oriented Garments Buying House</h2>
             <div class="col-lg-6">
                <div class="btbox">

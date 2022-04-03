@@ -36,6 +36,11 @@ class FrontendController extends Controller
         return view('compliance');
     }
 
+    public function services()
+    {
+        return view('service');
+    }
+
     public function products($id)
     {
         $data['products'] = Service::where('category_id', $id)->get();
@@ -52,7 +57,7 @@ class FrontendController extends Controller
         $request->validate([
             'name' => 'required|min:2',
             'email' => 'required|min:2',
-            'phone' => 'required|email',
+            'phone' => 'required',
             'message' => 'required',
         ]);
 

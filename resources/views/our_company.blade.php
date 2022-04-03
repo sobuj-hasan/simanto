@@ -18,7 +18,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="oucbox">
-                    <img src="{{ asset('img/banner/DIRECTOR.jpeg') }}" alt="">
+                    <img src="{{ asset('img/director.png') }}" alt="img">
                     <h1>Director</h1>
                     </div>
                 </div>
